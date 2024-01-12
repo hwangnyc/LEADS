@@ -1,0 +1,12 @@
+name: LEADS
+title: LEADS
+username: hwangnyc
+account: hwangnyc
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10897159
+bundleId: 8128483
+url: https://hwangnyc.shinyapps.io/LEADS/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

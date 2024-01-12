@@ -7,6 +7,6 @@ gs4_deauth()
 # Authenticate with your Google account (you will be prompted to log in)
 gs4_auth()
 
-sheet_id <- "SEE Henry"
+#sheet_id <- "SEE Henry"
 
-write_sheet(all_data_wOrg, ss = sheet_id, sheet = "Sheet1")
+write_sheet(leads, ss = sheet_id, sheet = "Sheet1")

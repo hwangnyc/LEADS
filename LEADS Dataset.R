@@ -133,11 +133,14 @@ all_data_wOrg<- left_join(all_data, all_org_data_final, by="Lead_Scholar")
 # Replace missing values in your_column with a specific value, for example, 0
 all_data_wOrg$Organization <- ifelse(is.na(all_data_wOrg$Organization), "Rochester, NY", all_data_wOrg$Organization)
 
-
-
 all_data_wOrg <- all_data_wOrg %>%
   mutate(Organization = if_else(Lead_Scholar == "Joe Treviño", "New York Police Department", Organization))
 
+#move bio to the last column
+all_data_wOrg2 <- all_data_wOrg %>% select(-Bio, everything(), Bio)
 
+#Join in IMG URL data
+#See LEADS_IMG.r code
 
+leads <- left_join( all_data_wOrg2, leads_img, by= "Lead_Scholar")
 
